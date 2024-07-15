@@ -7,7 +7,7 @@
     font-style: normal;
 }
 
-   /* shered style */
+/* shered style */
 
 .display-flex {
     display: flex;
@@ -45,9 +45,11 @@ main {
 main>section {
     margin-top: 130px;
 }
+
 .section-titale {
     font-size: 2.8rem;
     font-weight: 700;
+    margin-bottom: 24px;
 }
 
 /* header style */
@@ -123,6 +125,37 @@ main>section {
 
 #Features {
     color: rgba(255, 144, 14, 1);
+}
+
+/* some fact related style */
+.fact-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.fact {
+    border: 1px solid rgba(255, 144, 14, 1);
+    height: 240px;
+    width: 240px;
+    border-radius: 8px;
+    text-align: center  ;
+    justify-content: center;
+    align-items: center;
+}
+.fact-number{
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.fact-name{
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.fact-discription{
+    max-width: 540px;
+    margin-bottom: 100px;
 }
 
 /* responsive navbar for small device */
