@@ -127,6 +127,50 @@ main>section {
     color: rgba(255, 144, 14, 1);
 }
 
+/* feature-section */
+.features {
+    gap: 146px;
+}
+
+.feature-section-titale {
+    border-left: 5px solid rgba(255, 144, 14, 1);
+    padding-left: 20px;
+}
+
+.feature-card {
+    padding: 30px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+}
+
+.feature-card .feature-titale {
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.feature-image-btn-section {
+    position: relative;
+}
+
+.feature-btn {
+    position: absolute;
+    left: -92px;
+    bottom: 0;
+}
+
+#big-text {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+#small-text {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
 /* some fact related style */
 .fact-container {
     display: grid;
@@ -138,24 +182,57 @@ main>section {
     height: 240px;
     width: 240px;
     border-radius: 8px;
-    text-align: center  ;
+    text-align: center;
     justify-content: center;
     align-items: center;
 }
-.fact-number{
+
+.fact-number {
     font-size: 2.8rem;
     font-weight: 600;
     margin-top: 5px;
     margin-bottom: 10px;
 }
-.fact-name{
+
+.fact-name {
     font-size: 1.25rem;
     font-weight: 600;
     margin-top: 10px;
 }
-.fact-discription{
+
+.fact-discription {
     max-width: 540px;
     margin-bottom: 100px;
+}
+
+/* sponspor related style */
+.sponspor-info {
+    max-width: 540px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.sponspor-companies {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.sponspor-companies img {
+    filter: grayscale(100%);
+}
+
+/* footer section */
+
+.footer-section {
+    max-width: 1440px;
+    height: 100px;
+    margin: 130px auto 216px;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-discription {
+    font-size: 1.25rem;
 }
 
 /* responsive navbar for small device */
@@ -172,8 +249,19 @@ main>section {
         margin-left: 20px;
     }
 
-    .team-img-container {
+    .team-img-container,
+    .fact-container,
+    .sponspor-companies {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .fact-container {
+        justify-items: center;
+        gap: 24px;
+    }
+
+    .sponspor-companies {
+        gap: 50px;
     }
 }
 
@@ -187,4 +275,12 @@ main>section {
     .our-feature {
         margin: 50px auto;
     }
+
+    .fact-container,
+    .sponspor-companies {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        gap: 24px;
+    }
+
 }
